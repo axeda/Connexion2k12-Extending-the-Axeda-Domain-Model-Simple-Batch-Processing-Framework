@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+        apc-metadata.xml
+ -->
+<apcmetadata>
+    <customobjects>
+        <!-- Internal Stuff -->
+        <customobject>
+            <name>InitializeBatchFramework</name>
+            <type>Action</type>
+            <sourcefile>init/InitializeBatchFramework.groovy</sourcefile>
+            <params>
+                <param name="forceCreate" description="force the (re)-initialization of the framework." />
+            </params>
+        </customobject>
+        <customobject>
+            <name>BatchIgniter</name>
+            <type>Action</type>
+            <sourcefile>internal/BatchIgniter.groovy</sourcefile>
+            <params />
+        </customobject>
+        <customobject>
+            <name>BatchFinalizer</name>
+            <type>Action</type>
+            <sourcefile>internal/BatchFinalizer.groovy</sourcefile>
+            <params />
+        </customobject>
+
+        <!-- Analyzer and Processor -->
+        <customobject>
+            <name>AnalyzeBatch</name>
+            <type>Action</type>
+            <sourcefile>internal/AnalyzeBatch.groovy</sourcefile>
+            <params />
+        </customobject>
+        <customobject>
+            <name>ProcessBatch</name>
+            <type>Action</type>
+            <sourcefile>internal/ProcessBatch.groovy</sourcefile>
+            <params />
+        </customobject>
+
+        <!-- Public Services -->
+        <customobject>
+            <name>CreateBatch</name>
+            <type>Action</type>
+            <sourcefile>CreateBatch.groovy</sourcefile>
+            <params>
+                <param name="mock" description="if 1, return mock response" />
+                <param name="mockError" description="if 1, return mock error response" />
+            </params>
+        </customobject>
+        <customobject>
+            <name>DeleteBatch</name>
+            <type>Action</type>
+            <sourcefile>DeleteBatch.groovy</sourcefile>
+            <params>
+                <param name="mock" description="if 1, return mock response" />
+                <param name="mockError" description="if 1, return mock error response" />
+            </params>
+        </customobject>
+        <customobject>
+            <name>GetBatch</name>
+            <type>Action</type>
+            <sourcefile>GetBatch.groovy</sourcefile>
+            <params>
+                <param name="mock" description="if 1, return mock response" />
+                <param name="mockError" description="if 1, return mock error response" />
+            </params>
+        </customobject>
+        <customobject>
+            <name>GetBatches</name>
+            <type>Action</type>
+            <sourcefile>GetBatches.groovy</sourcefile>
+            <params>
+                <param name="mock" description="if 1, return mock response" />
+                <param name="mockError" description="if 1, return mock error response" />
+            </params>
+        </customobject>
+        <customobject>
+            <name>GetBatchErrors</name>
+            <type>Action</type>
+            <sourcefile>GetBatchErrors.groovy</sourcefile>
+            <params>
+                <param name="mock" description="if 1, return mock response" />
+                <param name="mockError" description="if 1, return mock error response" />
+            </params>
+        </customobject>
+
+        <!-- Util Service -->
+        <customobject>
+            <name>JsonLoginService</name>
+            <type>Action</type>
+            <sourcefile>util/JsonLoginService.groovy</sourcefile>
+            <params>
+                <param name="username" description="username to forward to Auth/login service." />
+                <param name="password" description="password to forward to Auth/login service." />
+            </params>
+        </customobject>
+    </customobjects>
+</apcmetadata>
